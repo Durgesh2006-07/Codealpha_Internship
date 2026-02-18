@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> Image Gallery</h1>
+
+<div class="filter-buttons">
+    <button class="filter-btn active" onclick="filterImages('all', this)">All</button>
+    <button class="filter-btn" onclick="filterImages('nature', this)">Nature</button>
+    <button class="filter-btn" onclick="filterImages('tech', this)">Tech</button>
+    <button class="filter-btn" onclick="filterImages('cars', this)">Cars</button>
+    <button class="filter-btn" onclick="filterImages('bikes', this)">Bikes</button>
+    <button class="filter-btn" onclick="filterImages('sports', this)">Sports</button>
+    <button class="filter-btn" onclick="filterImages('foods', this)">Foods</button>
+</div>
+
+
+<div class="gallery">
+    <div class="image-box nature">
+        <img src="images/img1.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box tech">
+        <img src="images/img2.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box nature">
+        <img src="images/img3.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box tech">
+        <img src="images/img4.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box cars">
+        <img src="images/img5.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box bikes">
+        <img src="images/img6.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box cars">
+        <img src="images/img8.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box bikes">
+        <img src="images/img7.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box sports">
+        <img src="images/img9.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box foods">
+        <img src="images/img10.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box sports">
+        <img src="images/img11.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box foods">
+        <img src="images/img12.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box nature">
+        <img src="images/img13.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box tech">
+        <img src="images/img14.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box nature">
+        <img src="images/img15.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box tech">
+        <img src="images/img16.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box cars">
+        <img src="images/img17.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box bikes">
+        <img src="images/img18.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box cars">
+        <img src="images/img19.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box bikes">
+        <img src="images/img20.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box sports">
+        <img src="images/img21.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box foods">
+        <img src="images/img22.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box sports">
+        <img src="images/img23.jpg" onclick="openLightbox(this.src)">
+    </div>
+    <div class="image-box foods">
+        <img src="images/img24.jpg" onclick="openLightbox(this.src)">
+    </div>
+
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">✖</span>
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <img id="lightbox-img">
+    <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
