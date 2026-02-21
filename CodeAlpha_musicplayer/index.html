@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Music Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+    <h2>🎵 Music Player</h2>
+
+    <img id="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRE9h25i_UZRTUU3-xOdGlTLoZaoKMw6uegg&s" alt="Cover">
+
+    <h3 id="title"></h3>
+    <p id="artist"></p>
+
+    <audio id="audio"></audio>
+    <canvas id="visualizer"></canvas>
+
+    <div class="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()" id="playBtn">▶</button>
+        <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <input type="range" id="progress" value="0">
+    <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+    </div>
+
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+
+    <div id="playlist"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
